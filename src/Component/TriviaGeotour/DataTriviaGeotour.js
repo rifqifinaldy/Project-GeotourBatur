@@ -1,0 +1,61 @@
+import img1 from '../../asset/img/g1.jpg'
+import img2 from '../../asset/img/g2.png'
+import img3 from '../../asset/img/g3.png'
+import img4 from '../../asset/img/g4.png'
+import img5 from '../../asset/img/g5.jpg'
+import img6 from '../../asset/img/g6.jpg'
+import img7 from '../../asset/img/g7.jpg'
+import img8 from '../../asset/img/g8.jpg'
+import img9 from '../../asset/img/g9.jpg'
+import img10 from '../../asset/img/g10.jpg'
+import img11 from '../../asset/img/g11.jpg'
+import img12 from '../../asset/img/g12.jpg'
+import img13 from '../../asset/img/g13.jpg'
+import img14 from '../../asset/img/g14.jpg'
+import img15 from '../../asset/img/g15.jpg'
+import img16 from '../../asset/img/g16.jpg'
+import img17 from '../../asset/img/g17.jpg'
+import img18 from '../../asset/img/g18.jpg'
+import img19 from '../../asset/img/g19.jpg'
+import img20 from '../../asset/img/g20.png'
+import img21 from '../../asset/img/g21.png'
+import img22 from '../../asset/img/g22.png'
+import img23 from '../../asset/img/g23.png'
+import img24 from '../../asset/img/g24.png'
+import img25 from '../../asset/img/g25.png'
+import img26 from '../../asset/img/g26.png'
+import img27 from '../../asset/img/g27.png'
+import img28 from '../../asset/img/g28.png'
+import img29 from '../../asset/img/g29.png'
+
+export const DataTriviaGeotour = [
+    { img: img1 },
+    { img: img2 },
+    { img: img3 },
+    { img: img4 },
+    { img: img5 },
+    { img: img6 },
+    { img: img7 },
+    { img: img8 },
+    { img: img9 },
+    { img: img10 },
+    { img: img11 },
+    { img: img12 },
+    { img: img13 },
+    { img: img14 },
+    { img: img15 },
+    { img: img16 },
+    { img: img17 },
+    { img: img18 },
+    { img: img19 },
+    { img: img20 },
+    { img: img21 },
+    { img: img22 },
+    { img: img23 },
+    { img: img24 },
+    { img: img25 },
+    { img: img26 },
+    { img: img27 },
+    { img: img28 },
+    { img: img29 },
+]
