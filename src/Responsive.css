@@ -36,7 +36,7 @@ Navbar Responsive
     .show .menu-list .menu-items {
         display: block !important;
     }
-    .show .menu-list .menu-items span{
+    .show .menu-list .menu-items .link{
         margin: 50px 0;
         display: block;
     }
@@ -61,6 +61,15 @@ Navbar Responsive
         height: max-content;
     }
       /* -----------
+    GALLERY
+    ------------ */
+    .tns-slider{
+        padding: 0;
+      }
+    .gallery img:hover {
+        transform: none;
+      }
+      /* -----------
     SERVICES
     ------------ */
     .card-services{
@@ -72,6 +81,12 @@ Navbar Responsive
     .our-destination p{
         font-size: 8px;
         line-height: 80%;
+    }
+      /* -----------
+    Contact
+    ------------ */
+    .contact{
+        padding: 10px 0;
     }
     /* FOOTER */
     .footer{

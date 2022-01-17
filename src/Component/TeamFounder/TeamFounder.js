@@ -13,7 +13,7 @@ const TeamFounder = () => {
             <div className='team d-flex justify-content-center'>
                 {dataFounder.map((item, i) => {
                     return (
-                        <div key={i} className='card-team p-1 shadow'>
+                        <div key={i} className='card-team'>
                             <img src={item.img} className='w-100' />
                             <div className='text-center info'>
                                 <h5>{item.name}</h5>

@@ -35,7 +35,7 @@ const NavbarComp = () => {
                     <div className="menu-items">
                         <Link to="/" className='link'>Home</Link>
                         <Link to='/about' className='link'>About</Link>
-                        <Link to='/catalog' className='link'>Catalog</Link>
+                        <Link to='/#' className='link'>Catalog</Link>
                         <Link to='/information-center' className='link'>Information Center</Link>
                         <Link to='/contact' className='link'>Contact</Link>
                     </div>

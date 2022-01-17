@@ -1,14 +1,14 @@
 import React from 'react'
-import Hero from '../Component/Hero/Hero'
+import Footer from '../Component/Footer/Footer'
 import OurVision from '../Component/OurVision/OurVision'
 import TeamFounder from '../Component/TeamFounder/TeamFounder'
 
 const About = () => {
     return (
         <div>
-            <Hero />
             <OurVision />
             <TeamFounder />
+            <Footer />
         </div>
     )
 }
