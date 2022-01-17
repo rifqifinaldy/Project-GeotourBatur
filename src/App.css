@@ -1,12 +1,29 @@
-:root {
-  --primary: #2A9D8F;
-  --secondary: #E76F51;
-  --warning:#E9C46A;
-  --dark:#264653;
-  --info:#2A819D;
+/* Global Style */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa !important;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
 
+/* Color Pallete */
+
+:root {
+  --primary: #06c356;
+  --secondary: #edba47;
+  --warning: #e9c46a;
+  --dark: #264653;
+  --info: #2a819d;
+}
 
 hr:not([size]) {
   width: 30%;
@@ -16,21 +33,24 @@ hr:not([size]) {
   height: 5px !important;
   border-radius: 10px;
 }
-.btn-custom{
+
+/* Button Style */
+
+.btn-custom {
   color: white;
-  border:1px solid #21887c !important;
-  background-color: #21887c !important;
+  border: 1px solid var(--primary) !important;
+  background-color: var(--primary) !important;
   border-radius: 20px !important;
 }
-.btn-custom:hover{
-  border:1px solid #1a635a !important;
+.btn-custom:hover {
+  border: 1px solid #1a635a !important;
   background-color: #1a635a !important;
 }
-.btn-custom a{
+.btn-custom a {
   color: white;
   text-decoration: none;
 }
-.btn-custom a:hover{
+.btn-custom a:hover {
   color: white;
   text-decoration: none;
 }
@@ -38,20 +58,20 @@ hr:not([size]) {
 /* ----------------------------------------------------
 Navbar 
 --------------------------- --------------------------*/
-.navbar{
+.navbar {
   position: fixed !important;
   width: 100%;
   color: white;
   z-index: 99;
   transition: all 0.3s ease;
 }
-.navbar.sticky  {
+.navbar.sticky {
   background: white;
   color: black;
   padding: 15px 0 !important;
   box-shadow: 0px 5px 5px 0px rgba(8, 8, 8, 0.1);
 }
-.navbar.sticky .menu-list .menu-items .link{
+.navbar.sticky .menu-list .menu-items .link {
   color: black;
 }
 
@@ -59,52 +79,48 @@ Navbar
   font-size: 32px;
   font-weight: 500;
 }
- .logo span:nth-child(1){
+.logo span:nth-child(1) {
   color: var(--primary) !important;
 }
-.logo span:nth-child(2){
+.logo span:nth-child(2) {
   color: var(--secondary) !important;
 }
 
-.menu-open{
+.menu-open {
   font-size: 20px;
   cursor: pointer;
   display: none;
 }
-.cancel-btn{
+.cancel-btn {
   display: none;
 }
-.menu-list .menu-items .link{
+.menu-list .menu-items .link {
   color: white;
   text-decoration: none;
   font-size: 17px;
-  padding:0 20px ;
+  padding: 0 20px;
   font-weight: 600;
 }
-.menu-list .menu-items .link:hover{
+.menu-list .menu-items .link:hover {
   color: white;
   text-decoration: none;
 }
-
 
 /* ----------------------------------------------------
 HERO 
 --------------------------- --------------------------*/
-.hero{
+.hero {
   height: 600px;
 }
 
-.carousel-item{
+.carousel-item {
   height: 600px;
 }
-
-
-
 
 /* ----------------------------------------------------
 OUR SERVICES 
 --------------------------- --------------------------*/
-.wrapper-services{
+.wrapper-services {
   height: max-content;
 }
 .card-services {
@@ -114,73 +130,70 @@ OUR SERVICES
   max-width: 100%;
 }
 
-
-
-
 /* ----------------------------------------------------
 OUR DESTINATION 
 --------------------------- --------------------------*/
-.our-destinations{
+.our-destinations {
   cursor: grab;
 }
-.our-destination-img{
+.our-destination-img {
   width: 30%;
 }
 .our-destination-img img {
-max-width: 100%;
+  max-width: 100%;
 }
-.destination{
-  background-image: url("./asset/img/destination.jpg") ;
+.destination {
+  background-image: url("./asset/img/destination.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   height: max-content;
 }
-.destination h1{
+.destination h1 {
   display: inline-block;
   border-bottom: 5px solid var(--secondary);
 }
-.destination button{
+.destination button {
   background-color: var(--primary);
   border-color: var(--primary);
 }
-.destination button:hover{
+.destination button:hover {
   background-color: #21887c;
   border-color: #21887c;
 }
-.our-destinations .tns-outer button{
+.our-destinations .tns-outer button {
   display: none;
 }
 
 /* ----------------------------------------------------
 GALLERY
 --------------------------- --------------------------*/
-.tns-slider{
+.tns-slider {
   padding: 25px;
 }
-.tns-controls{
+.tns-controls {
   text-align: center;
 }
-.tns-controls button{
- border: 1px solid var(--primary);
- transition: all 0.2s;
- color: white;
- background-color:var(--primary);
+.tns-controls button {
+  border: 1px solid var(--primary);
+  transition: all 0.2s;
+  color: white;
+  background-color: var(--primary);
   margin: 0 10px;
   border-radius: 5px;
-  padding:2px 15px;
+  padding: 2px 15px;
   text-transform: capitalize;
 }
-.tns-controls button:hover{
- border: 1px solid #26756c;
- background-color:#26756c;
+.tns-controls button:hover {
+  border: 1px solid #26756c;
+  background-color: #26756c;
 }
 .gallery {
   padding: 20px;
 }
 .gallery img {
-  transition: transform .2s;
+  transition: transform 0.2s;
   width: 100%;
   display: block;
   margin-left: auto;
@@ -189,7 +202,7 @@ GALLERY
 .gallery img:hover {
   transform: scale(1.2);
 }
-.caption-services{
+.caption-services {
   line-height: 1.2;
 }
 .caption-services h4 {
@@ -198,29 +211,55 @@ GALLERY
 .caption-services strong {
   font-size: 14px;
 }
-.caption-services span{
+.caption-services span {
   font-size: 14px;
 }
 .caption-services .harga {
   color: var(--secondary);
 }
 
-
-
-
 /* ----------------------------------------------------
 OUR Vision 
 --------------------------- --------------------------*/
-.card-our-vision{
-  background:white;
+.vision {
+  position: relative;
+}
+
+.vision .section-divider {
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+
+.card-our-vision {
+  background: white;
   position: absolute;
   z-index: 20;
 }
 
+@media screen and (max-width: 768px) {
+  .card-our-vision {
+    position:static;
+  }
+}
 
 /* ----------------------------------------------------
 TEAM FOUNDER 
 --------------------------- --------------------------*/
+.team {
+  background-image: url("./asset/img/team-mountain.png");
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -200;
+}
+.team .line-background {
+  position: absolute;
+  margin-top: 100px;
+}
+.team .line-background:nth-of-type(2) {
+  position: absolute;
+  margin-top: 250px;
+}
 .team-founder hr:not([size]) {
   width: 15%;
   margin: 0 auto;
@@ -229,30 +268,41 @@ TEAM FOUNDER
   height: 5px !important;
   border-radius: 10px;
 }
-.card-team{
+.card-team {
   transition: all 0.3s ease;
   width: 300px;
   height: max-content;
   margin: 0px 20px;
 }
-.card-team .info{
-  width: 290px;
-  position: absolute;
+.card-team .info {
+  width: 100%;
+  position: relative;
   color: white;
-  transition: all 0.3s ease ;
+  transition: all 0.3s ease;
   margin-top: -90px;
-  padding: 10px;
+  padding: 5px;
   height: 100px;
   opacity: 0;
 }
-.card-team .info h5{
+.card-team .info h5 {
   color: var(--secondary);
 }
-.card-team:hover .info{
+.card-team:hover .info {
   margin-top: -100px;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* ---------------------------------------------------
+Line Background
+------------------------------------------------------ */
+.line-background {
+  background-color: var(--primary);
+  width: 100%;
+  height: 1px;
+  z-index: -100;
+}
+
 /* ----------------------------------------------------
 FOOTER
 --------------------------- --------------------------*/
@@ -260,14 +310,14 @@ FOOTER
   background-color: var(--dark);
   color: white;
 }
-.footer .logo span{
-font-size: 25px;
+.footer .logo span {
+  font-size: 25px;
 }
-.footer a{
+.footer a {
   text-decoration: none;
   color: white;
 }
-.footer a:hover{
+.footer a:hover {
   text-decoration: none;
   color: rgb(202, 193, 193);
 }

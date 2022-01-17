@@ -28,7 +28,7 @@ const OurDestination = () => {
                     <path fill="#ffffff" fillOpacity="1" d="M0,96L80,90.7C160,85,320,75,480,96C640,117,800,171,960,170.7C1120,171,1280,117,1360,90.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
                 </svg>
                 <Container>
-                    <h3>Destination</h3>
+                    <h3 className="text-muted">Destination</h3>
                     <h1 className='text-white'>MOUNT BATUR</h1>
                     <p className='text-white'> Mount Batur has 3 crater peaks, where this crater was formed from the side eruption of Mount Batur. Mount Batur is estimated to have formed 5000 years ago with its highest peak reaching an altitude of 1,717 masl. At the top we will find fumaroles (gas vapor) that come out from rock fracture. Nearly more than 26 eruptive events were recorded from Batur Volcano from 1804.This mountain is perfect for both beginner and professional climbers to enjoy the beautiful sunrise in Bali.</p>
                     <Button className="shadow btn-custom px-4">Explore Now</Button>
