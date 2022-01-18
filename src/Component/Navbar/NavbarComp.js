@@ -2,9 +2,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 import { Navbar } from 'react-bootstrap'
-import { Link,Router,Switch,Route } from 'react-router-dom'
-import About from '../../Pages/About'
-import Home from '../../Pages/Home'
+import { Link } from 'react-router-dom'
 
 const NavbarComp = () => {
     const [show, setShow] = useState(false)
