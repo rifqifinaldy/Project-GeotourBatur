@@ -30,8 +30,8 @@ const Footer = () => {
                     <Col className='my-2' sm="12" md="2">
                         <strong>Others</strong><br />
                         <a href="#">Catalog</a> <br />
-                        <a href="#">Information Center</a> <br />
-                        <a href="#">About</a> <br />
+                        <a href="/information-center">Information Center</a> <br />
+                        <a href="/about">About</a> <br />
                     </Col>
                 </Row>
 
