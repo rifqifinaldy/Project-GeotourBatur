@@ -1,38 +1,422 @@
-.App {
+/* Global Style */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Color Pallete */
+
+:root {
+  --primary: #06c356;
+  --secondary: #edba47;
+  --warning: #e9c46a;
+  --dark: #264653;
+  --info: #2a819d;
+}
+
+hr:not([size]) {
+  width: 30%;
+  margin: 0 auto;
+  opacity: 100;
+  color: var(--secondary);
+  height: 5px !important;
+  border-radius: 10px;
+}
+
+/* Button Style */
+
+.btn-custom {
+  color: white;
+  border: 1px solid var(--primary) !important;
+  background-color: var(--primary) !important;
+  border-radius: 20px !important;
+}
+.btn-custom:hover {
+  border: 1px solid #1a635a !important;
+  background-color: #1a635a !important;
+}
+.btn-custom a {
+  color: white;
+  text-decoration: none;
+}
+.btn-custom a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* ----------------------------------------------------
+Navbar 
+--------------------------- --------------------------*/
+.navbar {
+  position: fixed !important;
+  width: 100%;
+  color: white;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  background: white;
+  color: black;
+  padding: 15px 0 !important;
+  box-shadow: 0px 5px 5px 0px rgba(8, 8, 8, 0.1);
+}
+.navbar.sticky .menu-list .menu-items .link {
+  color: black;
+}
+
+.logo span {
+  font-size: 32px;
+  font-weight: 500;
+}
+.logo span:nth-child(1) {
+  color: var(--primary) !important;
+}
+.logo span:nth-child(2) {
+  color: var(--secondary) !important;
+}
+
+.menu-open {
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.cancel-btn {
+  display: none;
+}
+.menu-list .menu-items .link {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 0 20px;
+  font-weight: 600;
+}
+.menu-list .menu-items .link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* ----------------------------------------------------
+HERO 
+--------------------------- --------------------------*/
+.hero {
+  height: 600px;
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+/* ----------------------------------------------------
+OUR SERVICES 
+--------------------------- --------------------------*/
+.wrapper-services {
+  height: max-content;
+}
+.card-services {
+  display: inline-block;
+}
+.card-services img {
+  max-width: 100%;
+}
+
+/* ----------------------------------------------------
+OUR DESTINATION 
+--------------------------- --------------------------*/
+.our-destinations {
+  cursor: grab;
+}
+.our-destination-img {
+  width: 30%;
+}
+.our-destination-img img {
+  max-width: 100%;
+}
+.destination {
+  background-image: url("./asset/img/destination.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: max-content;
+}
+.destination h1 {
+  display: inline-block;
+  border-bottom: 5px solid var(--secondary);
+}
+.destination button {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.destination button:hover {
+  background-color: #21887c;
+  border-color: #21887c;
+}
+.our-destinations .tns-outer button {
+  display: none;
+}
+
+/* ----------------------------------------------------
+GALLERY
+--------------------------- --------------------------*/
+.tns-slider {
+  padding: 25px;
+}
+.tns-controls {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tns-controls button {
+  border: 1px solid var(--primary);
+  transition: all 0.2s;
+  color: white;
+  background-color: var(--primary);
+  margin: 0 10px;
+  border-radius: 5px;
+  padding: 2px 15px;
+  text-transform: capitalize;
+}
+.tns-controls button:hover {
+  border: 1px solid #26756c;
+  background-color: #26756c;
+}
+.gallery {
+  padding: 20px;
+}
+.gallery img {
+  transition: transform 0.2s;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery img:hover {
+  transform: scale(1.2);
+}
+.caption-services {
+  line-height: 1.2;
+}
+.caption-services h4 {
+  color: var(--dark);
+}
+.caption-services strong {
+  font-size: 14px;
+}
+.caption-services span {
+  font-size: 14px;
+}
+.caption-services .harga {
+  color: var(--secondary);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* ----------------------------------------------------
+OUR Vision 
+--------------------------- --------------------------*/
+.vision {
+  position: relative;
+}
+
+.vision .section-divider {
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+
+.card-our-vision {
+  background: white;
+  position: absolute;
+  z-index: 20;
+}
+
+@media screen and (max-width: 768px) {
+  .card-our-vision {
+    position:static;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* ----------------------------------------------------
+TEAM FOUNDER 
+--------------------------- --------------------------*/
+.team {
+  background-image: url("./asset/img/team-mountain.png");
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -200;
+}
+.team .line-background {
+  position: absolute;
+  margin-top: 100px;
+}
+.team .line-background:nth-of-type(2) {
+  position: absolute;
+  margin-top: 250px;
+}
+.team-founder hr:not([size]) {
+  width: 15%;
+  margin: 0 auto;
+  opacity: 100;
+  color: var(--secondary);
+  height: 5px !important;
+  border-radius: 10px;
+}
+.card-team {
+  transition: all 0.3s ease;
+  width: 300px;
+  height: max-content;
+  margin: 0px 20px;
+}
+.card-team .info {
+  width: 100%;
+  position: relative;
+  color: white;
+  transition: all 0.3s ease;
+  margin-top: -90px;
+  padding: 5px;
+  height: 100px;
+  opacity: 0;
+}
+.card-team .info h5 {
+  color: var(--secondary);
+}
+.card-team:hover .info {
+  margin-top: -100px;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------------------------------
+Line Background
+------------------------------------------------------ */
+.line-background {
+  background-color: var(--primary);
+  width: 100%;
+  height: 1px;
+  z-index: -100;
+}
+
+/* ----------------------------------------------------
+BLOG DAN ARTICLE
+--------------------------- --------------------------*/
+.blog hr:not([size]){
+  width: 100%;
+  opacity: 1;
+  color: var(--secondary);
+  height: 2px !important;
+  border-radius: 10px;
+}
+.blog-body img{
+  margin: 20px auto;
+}
+.blog-body p,.blog-body a{
+  text-align: left;
+}
+.hashtag{
+  text-align: left;
+}
+.hashtag a{
+  margin: 0 3px;
+  text-decoration: none;
+}
+.filter{
+  background-color: #F2F2F2;
+}
+.filter a{
+  display: block;
+  margin: 10px 0;
+color: black;
+text-decoration: none;
+}
+.filter a:hover{
+color: black;
+}
+.filter hr:not([size]){
+  width: 100%;
+  opacity: 1;
+  color: var(--secondary);
+  height: 2px !important;
+  border-radius: 10px;
+}
+.accordion-item{
+  border: none !important;
+  background-color: #F2F2F2 !important;
+
+}
+.accordion-header button{
+  background-color: #F2F2F2;
+  padding: 10px;
+}
+.accordion-button:not(.collapsed){
+  background-color: #F2F2F2 !important;
+  color: var(--primary) !important;
+  font-weight: bold;
+}
+.accordion-collapse.show{
+  background-color: #F2F2F2 !important;
+text-align: left !important;
+} 
+/* ----------------------------------------------------
+CONTACT
+--------------------------- --------------------------*/
+.contact {
+  padding: 70px 0;
+  background-color: var(--dark);
+  color: white;
+  background-size: cover;
+  background-image: url('./asset/img/contact-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact .info h4{
+  margin: 20px 0 5px 0;
+}
+.contact .info hr:not([size]){
+  width: 40%;
+  margin: 0 !important;
+  opacity: 1;
+  color: var(--secondary);
+  height: 2px !important;
+  border-radius: 10px;
+}
+.contact .info .hr-contact:not([size]){
+  width: 100%;
+  margin: 15px 0!important;
+  opacity: 1;
+  color: var(--primary);
+  height: 3px !important;
+  border-radius: 10px;
+}
+.contact .info a{
+  margin: 0 3px;
+  color: white;
+  font-size: 25px;
+}
+.contact .info a:hover{
+  color: rgb(138, 135, 135);
+}
+/* ----------------------------------------------------
+FOOTER
+--------------------------- --------------------------*/
+.footer {
+  background-color: var(--dark);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.footer .logo span {
+  font-size: 25px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: rgb(202, 193, 193);
 }

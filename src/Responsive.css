@@ -1,0 +1,95 @@
+
+/* ------------------------
+Navbar Responsive
+--------------------------- */
+@media (max-width: 950px) {
+    .navbar .logo span {
+        font-size: 20px;
+    }
+    .show .menu-open{
+        display: none;
+    }
+    .menu-open{
+        display: block;
+        z-index: 100000;
+    }
+    .menu-items{
+        display: none;
+    }
+    .show {
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        display: block;
+    }
+    .show .menu-list{
+        height: 100vh;
+        top: 0;
+        color: black;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        display: block;
+        background: #ced4da;
+        transition: all 0.3s ease;
+    }
+    .show .menu-list .menu-items {
+        display: block !important;
+    }
+    .show .menu-list .menu-items .link{
+        margin: 50px 0;
+        display: block;
+    }
+    .show .cancel-btn{
+        display: block;
+    }
+    .cancel-btn {
+        cursor: pointer;
+        margin:10px 30px;
+        font-size: 30px;
+        text-align: right;
+    }
+}
+@media (max-width: 850px) {
+    /* -----------
+    HERO
+    ------------ */
+    .hero{
+        height: max-content;
+    }
+    .carousel-item{
+        height: max-content;
+    }
+      /* -----------
+    GALLERY
+    ------------ */
+    .tns-slider{
+        padding: 0;
+      }
+    .gallery img:hover {
+        transform: none;
+      }
+      /* -----------
+    SERVICES
+    ------------ */
+    .card-services{
+        width: 100%;
+    }
+    .our-destination h3{
+        font-size: 12px;
+    }
+    .our-destination p{
+        font-size: 8px;
+        line-height: 80%;
+    }
+      /* -----------
+    Contact
+    ------------ */
+    .contact{
+        padding: 10px 0;
+    }
+    /* FOOTER */
+    .footer{
+        text-align: center;
+    }
+}
