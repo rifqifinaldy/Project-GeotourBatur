@@ -367,8 +367,8 @@ CONTACT
 --------------------------- --------------------------*/
 .contact {
   padding: 70px 0;
-  background-color: var(--dark);
-  color: white;
+  background-color: var(--secondary);
+  color: var(--dark);
   background-size: cover;
   background-image: url('./asset/img/contact-bg.png');
   background-position: center;
@@ -381,7 +381,7 @@ CONTACT
   width: 40%;
   margin: 0 !important;
   opacity: 1;
-  color: var(--secondary);
+  color: var(--dark);
   height: 2px !important;
   border-radius: 10px;
 }
@@ -393,9 +393,12 @@ CONTACT
   height: 3px !important;
   border-radius: 10px;
 }
+.contact .title hr{
+  color: var(--dark);
+}
 .contact .info a{
   margin: 0 3px;
-  color: white;
+  color: var(--dark);
   font-size: 25px;
 }
 .contact .info a:hover{

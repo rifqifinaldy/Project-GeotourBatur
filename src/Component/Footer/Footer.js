@@ -30,7 +30,7 @@ const Footer = () => {
             <br />
             <ul className="list-unstyled">
               <li>(+62) 82121988204</li>
-              <li>geotourbatur@gmail.com</li>
+              <li>geotourbatur1926@gmail.com</li>
             </ul>
           </Col>
           <Col sm="12" md="2">
