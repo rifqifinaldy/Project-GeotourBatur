@@ -1,9 +1,8 @@
 import './App.css';
 import './Responsive.css'
 import NavbarComp from './Component/Navbar/NavbarComp';
-import Footer from './Component/Footer/Footer'
 import Home from './Pages/Home';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import About from './Pages/About';
 import InformationCenter from './Pages/InformationCenter';

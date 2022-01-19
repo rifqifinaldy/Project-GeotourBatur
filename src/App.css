@@ -405,17 +405,28 @@ CONTACT
 FOOTER
 --------------------------- --------------------------*/
 .footer {
-  background-color: var(--dark);
-  color: white;
+  background-color: var(--secondary);
+  color: var(--dark);
 }
 .footer .logo span {
   font-size: 25px;
 }
 .footer a {
   text-decoration: none;
-  color: white;
+  color: var(--dark);
 }
 .footer a:hover {
   text-decoration: none;
-  color: rgb(202, 193, 193);
+  color: rgb(11, 150, 11);
+}
+
+.logo-footer span {
+  font-size: 32px;
+  font-weight: 500;
+}
+.logo-footer span:nth-child(1) {
+  color: var(--dark) !important;
+}
+.logo-footer span:nth-child(2) {
+  color: var(--dark) !important;
 }
