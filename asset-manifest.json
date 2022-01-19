@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/geotour-batur/static/css/main.30a9934c.css",
-    "main.js": "/geotour-batur/static/js/main.e7ed45bf.js",
+    "main.css": "/geotour-batur/static/css/main.d3a26854.css",
+    "main.js": "/geotour-batur/static/js/main.cab216db.js",
     "static/media/1011552449.png": "/geotour-batur/static/media/1011552449.06dc303c6ddbfe7b5243.png",
     "static/media/g27.png": "/geotour-batur/static/media/g27.5daa5a052ea4aea9031f.png",
     "static/media/g29.png": "/geotour-batur/static/media/g29.11d36512073eb4c223c5.png",
@@ -42,18 +42,19 @@
     "static/media/g8.jpg": "/geotour-batur/static/media/g8.57e473b1f347fd756b5a.jpg",
     "static/media/g1.jpg": "/geotour-batur/static/media/g1.d48a321b130a432f2611.jpg",
     "static/media/g7.jpg": "/geotour-batur/static/media/g7.f758d4f9c02bf52983b6.jpg",
-    "static/media/contact-bg.png": "/geotour-batur/static/media/contact-bg.9270769d222145ffed0e.png",
     "static/media/culture_diversity.jpg": "/geotour-batur/static/media/culture_diversity.2eb41acc0b7af6ce1930.jpg",
+    "static/media/contact-bg.png": "/geotour-batur/static/media/contact-bg.f35b953958a1bc56bd5f.png",
     "static/media/team-mountain.png": "/geotour-batur/static/media/team-mountain.e467c6a6adef97151fdf.png",
     "static/media/team 2.jpg": "/geotour-batur/static/media/team 2.2024650c193165dd247c.jpg",
     "static/media/ourvision_illustration.png": "/geotour-batur/static/media/ourvision_illustration.61546e24958c98566523.png",
+    "static/media/catalog.pdf": "/geotour-batur/static/media/catalog.1a7212338381990a3767.pdf",
     "static/media/comment.png": "/geotour-batur/static/media/comment.1bb43856ec9f0b2687f1.png",
     "index.html": "/geotour-batur/index.html",
-    "main.30a9934c.css.map": "/geotour-batur/static/css/main.30a9934c.css.map",
-    "main.e7ed45bf.js.map": "/geotour-batur/static/js/main.e7ed45bf.js.map"
+    "main.d3a26854.css.map": "/geotour-batur/static/css/main.d3a26854.css.map",
+    "main.cab216db.js.map": "/geotour-batur/static/js/main.cab216db.js.map"
   },
   "entrypoints": [
-    "static/css/main.30a9934c.css",
-    "static/js/main.e7ed45bf.js"
+    "static/css/main.d3a26854.css",
+    "static/js/main.cab216db.js"
   ]
 }
