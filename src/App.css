@@ -125,6 +125,10 @@ Navbar
   text-decoration: none;
 }
 
+.menu-list .menu-items .active-link {
+  color: var(--secondary)
+}
+
 /* ----------------------------------------------------
 HERO 
 --------------------------- --------------------------*/
