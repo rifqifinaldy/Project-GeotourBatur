@@ -8,12 +8,14 @@ import About from './Pages/About';
 import InformationCenter from './Pages/InformationCenter';
 import Hero from './Component/Hero/Hero';
 import Contact from './Pages/Contact';
+import Whatsapp from './Component/Whatsapp/Whatsapp';
 function App() {
   return (
     <div className="App">
       <Router>
         <NavbarComp />
         <Hero />
+        <Whatsapp />
         <Route exact path="/"> <Home /></Route>
         <Route exact path="/about"> <About /></Route>
         <Route exact path="/information-center"> <InformationCenter /></Route>

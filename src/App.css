@@ -53,6 +53,26 @@ hr:not([size]) {
   color: white;
   text-decoration: none;
 }
+/* ----------------------------------------------------
+Whatsapp Button
+------------------------------------------------------ */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 100px;
+  right: 40px;
+  background-color: #25D366;
+  color: #fff !important;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
 
 /* ----------------------------------------------------
 Navbar 
