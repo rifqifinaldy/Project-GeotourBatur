@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/geotour-batur/static/css/main.90df26fe.css",
-    "main.js": "/geotour-batur/static/js/main.3e3c959d.js",
+    "main.js": "/geotour-batur/static/js/main.9f2a390d.js",
     "static/media/catalog.pdf": "/geotour-batur/static/media/catalog.6544a3e41592dbbb4b3b.pdf",
     "static/media/hero.png": "/geotour-batur/static/media/hero.cc7bb791c519fe29d6ec.png",
     "static/media/1011552449.png": "/geotour-batur/static/media/1011552449.584e9be057558a93b660.png",
@@ -55,10 +55,10 @@
     "static/media/img-yt.png": "/geotour-batur/static/media/img-yt.908c74805689e9f6a040.png",
     "index.html": "/geotour-batur/index.html",
     "main.90df26fe.css.map": "/geotour-batur/static/css/main.90df26fe.css.map",
-    "main.3e3c959d.js.map": "/geotour-batur/static/js/main.3e3c959d.js.map"
+    "main.9f2a390d.js.map": "/geotour-batur/static/js/main.9f2a390d.js.map"
   },
   "entrypoints": [
     "static/css/main.90df26fe.css",
-    "static/js/main.3e3c959d.js"
+    "static/js/main.9f2a390d.js"
   ]
 }
