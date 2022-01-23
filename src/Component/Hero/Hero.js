@@ -4,11 +4,9 @@ import img from '../../asset/img/1011552449.png'
 import img2 from '../../asset/img/hero.png'
 const Hero = () => {
     const [index, setIndex] = useState(0);
-
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     };
-
     return (
         <div className='hero shadow-sm'>
             <Carousel activeIndex={index} onSelect={handleSelect}>
