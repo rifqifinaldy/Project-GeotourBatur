@@ -18,7 +18,7 @@ const Youtube = () => {
             </div>
             <div className='text-center'>
                 <span>Visit Our Youtube Channel for More</span><br />
-                <a href="https://www.youtube.com/watch?v=3s4cZD-Fqlc" target="_blank">
+                <a href="https://www.youtube.com/channel/UCT7HeIizjLXRfs29Ypj5mAQ" rel="noopener noreferrer" target="_blank">
                     <Button className="shadow btn-custom px-4">
                         Our Channel
                     </Button>

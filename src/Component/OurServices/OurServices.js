@@ -19,7 +19,7 @@ const OurServices = () => {
                         return (
                             <Col key={i} xl="3 m-3" md="5 m-3" className='card-services p-2 shadow '>
                                 <div className='img-services '>
-                                    <img src={item.img}  />
+                                    <img src={item.img}  alt="geotour batur services"/>
                                 </div>
                                 <div className='caption-services p-3'>
                                     <h4>{item.title}</h4>

@@ -36,17 +36,17 @@ const BlogDanArticle = () => {
                                 • Batch 1 (Satu) tanggal 21-25 Juni 2021 untuk 23 Peserta (lampiran II)
                                 • Batch 2 (kedua) tanggal 5-9 Juli 2021 untuk 23 Peserta (lampiran III)</p>
                             <div className='hashtag'>
-                                <a href="#">#geopark </a>
-                                <a href="#">#geoparkbatur </a>
-                                <a href="#">#kintamani </a>
-                                <a href="#">#batur</a>
-                                <a href="#">#bali</a>
-                                <a href="#">#geowisata</a>
-                                <a href="#">#bapennasri </a>
-                                <a href="#">#igyf2021 </a>
-                                <a href="#">#infobangli </a>
-                                <a href="#">#geotourbatur</a>
-                                <a href="#">#triviageotourbatur</a>
+                                <small className="text-muted">#geopark </small>
+                                <small className="text-muted">#geoparkbatur </small>
+                                <small className="text-muted">#kintamani </small>
+                                <small className="text-muted">#batur </small>
+                                <small className="text-muted">#bali </small>
+                                <small className="text-muted">#geowisata </small>
+                                <small className="text-muted">#bapennasri </small>
+                                <small className="text-muted">#igyf2021 </small>
+                                <small className="text-muted">#infobangli </small>
+                                <small className="text-muted">#geotourbatur </small>
+                                <small className="text-muted">#triviageotourbatur </small>
                             </div>
                         </div>
                     </Col>
@@ -60,15 +60,6 @@ const BlogDanArticle = () => {
                                         <p>January</p>
                                         <p>February</p>
                                         <p>March</p>
-                                        {/* <p>April</p>
-                                        <p>May</p>
-                                        <p>June</p>
-                                        <p>July</p>
-                                        <p>August</p>
-                                        <p>September</p>
-                                        <p>October</p>
-                                        <p>November</p>
-                                        <p>December</p> */}
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1" >

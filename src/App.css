@@ -15,6 +15,10 @@ code {
     monospace;
 }
 
+.disable-selection {
+  user-select: none;
+}
+
 /* Color Pallete */
 
 :root {
@@ -61,9 +65,9 @@ Whatsapp Button
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 100px;
+  bottom: 50px;
   right: 40px;
-  background-color: #25D366;
+  background-color: #25d366;
   color: #fff !important;
   border-radius: 50px;
   text-align: center;
@@ -73,6 +77,15 @@ Whatsapp Button
   align-items: center;
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  .whatsapp-float {
+    width: 30px;
+    height: 30px;
+    bottom: 50px;
+    font-size: 22px;
+  }
 }
 
 /* ----------------------------------------------------
@@ -93,6 +106,10 @@ Navbar
 }
 .navbar.sticky .menu-list .menu-items .link {
   color: black;
+}
+
+.menu-list .active-link {
+  color: var(--secondary) !important;
 }
 
 .logo span {
@@ -119,15 +136,16 @@ Navbar
   text-decoration: none;
   font-size: 17px;
   padding: 0 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .menu-list .menu-items .link:hover {
-  color: white;
+  opacity: 1;
+  color: var(--secondary) !important;
   text-decoration: none;
 }
 
 .menu-list .menu-items .active-link {
-  color: var(--secondary)
+  color: var(--secondary);
 }
 
 /* ----------------------------------------------------
@@ -141,20 +159,24 @@ HERO
   height: 600px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 100px;
+  }
+}
+
 /* ----------------------------------------------------
 OUR SERVICES 
 --------------------------- --------------------------*/
-.services{
-}
 .wrapper-services {
   background-image: url("./asset/img/team-mountain.png");
   background-color: white;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .card-services {
   display: inline-block;
   background-color: white;
-
 }
 .card-services img {
   max-width: 100%;
@@ -163,16 +185,18 @@ OUR SERVICES
 /* ----------------------------------------------------
 OUR DESTINATION 
 --------------------------- --------------------------*/
-.tns-ovh{
+.tns-ovh {
   height: 475px !important;
 }
 .our-destinations {
   height: max-content;
   background-size: 500px;
-  background-image: url('./asset/img/bg-1.png');
+  background-image: url("./asset/img/bg-1.png");
   background-position: top right;
   background-repeat: no-repeat;
+  user-select: none;
   cursor: grab;
+  position: relative;
 }
 .our-destination-img {
   width: 30%;
@@ -180,7 +204,6 @@ OUR DESTINATION
 .our-destination-img img {
   max-width: 100%;
 }
-
 .destination {
   background-image: url("./asset/img/destination.jpg");
   background-repeat: no-repeat;
@@ -201,48 +224,25 @@ OUR DESTINATION
   background-color: #21887c;
   border-color: #21887c;
 }
-.our-destinations .tns-outer button {
-  display: none;
-}
 /* ----------------------------------------------------
 GALLERY
 --------------------------- --------------------------*/
-.wrapper-gallery{
-  background-image: url('./asset//img/bg-1.png');
-  background-position: 0 200px;
+.wrapper-gallery {
+  background-image: url("./asset//img/bg-1.png");
+  background-position: 1 200px;
   background-repeat: no-repeat;
   background-size: 45%;
 }
-.wrapper-gallery .title{
-  background-image: url('./asset//img/bg-2.png');
+.wrapper-gallery .title {
+  background-image: url("./asset//img/bg-2.png");
   background-repeat: no-repeat;
   background-position-x: 75%;
   background-size: 10%;
 }
+.wrapper-gallery {
+  position: relative;
+}
 
-.tns-slider {
-  padding: 25px;
-}
-.tns-controls {
-  text-align: center;
-}
-.tns-controls button {
-  border: 1px solid var(--primary);
-  transition: all 0.2s;
-  color: white;
-  background-color: var(--primary);
-  margin: 0 10px;
-  border-radius: 5px;
-  padding: 2px 15px;
-  text-transform: capitalize;
-}
-.tns-controls button:hover {
-  border: 1px solid #26756c;
-  background-color: #26756c;
-}
-.gallery {
-  padding: 20px;
-}
 .gallery img {
   transition: transform 0.2s;
   width: 100%;
@@ -269,18 +269,17 @@ GALLERY
   color: var(--secondary);
 }
 
-
 /* ----------------------------------------------------
 Youtube
 --------------------------- --------------------------*/
 .youtube {
-  background-image:url('./asset/img/bg-yt.png') ;
+  background-image: url("./asset/img/bg-yt.png");
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: bottom center;
 }
-.youtube .title{
-  background-image:url('./asset/img/img-yt.png') ;
+.youtube .title {
+  background-image: url("./asset/img/img-yt.png");
   background-size: 13%;
   background-repeat: no-repeat;
   background-position-x: 25%;
@@ -308,7 +307,7 @@ OUR Vision
 
 @media screen and (max-width: 768px) {
   .card-our-vision {
-    position:static;
+    position: static;
   }
 }
 
@@ -318,6 +317,7 @@ TEAM FOUNDER
 .team {
   background-image: url("./asset/img/team-mountain.png");
   background-color: rgba(255, 255, 255, 0.2);
+  background-size: cover;
   z-index: -200;
 }
 .team .line-background {
@@ -374,63 +374,63 @@ Line Background
 /* ----------------------------------------------------
 BLOG DAN ARTICLE
 --------------------------- --------------------------*/
-.blog hr:not([size]){
+.blog hr:not([size]) {
   width: 100%;
   opacity: 1;
   color: var(--secondary);
   height: 2px !important;
   border-radius: 10px;
 }
-.blog-body img{
+.blog-body img {
   margin: 20px auto;
 }
-.blog-body p,.blog-body a{
+.blog-body p,
+.blog-body a {
   text-align: left;
 }
-.hashtag{
+.hashtag {
   text-align: left;
 }
-.hashtag a{
+.hashtag a {
   margin: 0 3px;
   text-decoration: none;
 }
-.filter{
-  background-color: #F2F2F2;
+.filter {
+  background-color: #f2f2f2;
 }
-.filter a{
+.filter a {
   display: block;
   margin: 10px 0;
-color: black;
-text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
-.filter a:hover{
-color: black;
+.filter a:hover {
+  color: black;
 }
-.filter hr:not([size]){
+.filter hr:not([size]) {
   width: 100%;
   opacity: 1;
   color: var(--secondary);
   height: 2px !important;
   border-radius: 10px;
 }
-.accordion-item{
+.accordion-item {
   border: none !important;
-  background-color: #F2F2F2 !important;
-
+  background-color: #f2f2f2 !important;
 }
-.accordion-header button{
-  background-color: #F2F2F2;
+.accordion-header button {
+  background-color: #f2f2f2;
   padding: 10px;
 }
-.accordion-button:not(.collapsed){
-  background-color: #F2F2F2 !important;
+.accordion-button:not(.collapsed) {
+  background-color: #f2f2f2 !important;
   color: var(--primary) !important;
   font-weight: bold;
 }
-.accordion-collapse.show{
-  background-color: #F2F2F2 !important;
-text-align: left !important;
-} 
+.accordion-collapse.show {
+  background-color: #f2f2f2 !important;
+  text-align: left !important;
+}
 /* ----------------------------------------------------
 CONTACT
 --------------------------- --------------------------*/
@@ -439,14 +439,14 @@ CONTACT
   background-color: var(--secondary);
   color: var(--dark);
   background-size: cover;
-  background-image: url('./asset/img/contact-bg.png');
+  background-image: url("./asset/img/contact-bg.png");
   background-position: center;
   background-repeat: no-repeat;
 }
-.contact .info h4{
+.contact .info h4 {
   margin: 20px 0 5px 0;
 }
-.contact .info hr:not([size]){
+.contact .info hr:not([size]) {
   width: 40%;
   margin: 0 !important;
   opacity: 1;
@@ -454,23 +454,23 @@ CONTACT
   height: 2px !important;
   border-radius: 10px;
 }
-.contact .info .hr-contact:not([size]){
+.contact .info .hr-contact:not([size]) {
   width: 100%;
-  margin: 15px 0!important;
+  margin: 15px 0 !important;
   opacity: 1;
   color: var(--primary);
   height: 3px !important;
   border-radius: 10px;
 }
-.contact .title hr{
+.contact .title hr {
   color: var(--dark);
 }
-.contact .info a{
+.contact .info a {
   margin: 0 3px;
   color: var(--dark);
   font-size: 25px;
 }
-.contact .info a:hover{
+.contact .info a:hover {
   color: rgb(138, 135, 135);
 }
 /* ----------------------------------------------------
@@ -514,22 +514,107 @@ FOOTER
   width: 100%;
   height: 100vh;
 }
-.open-img{
+.open-img {
   top: 0;
   text-align: right;
 }
-.open-img .img-card{
-animation: popOut .5s ease 0s 1 normal forwards;
-border-radius: 5px;
-padding: 5px;
-width: 50%;
-margin: 0 auto;
-padding-top: 50px;
+.open-img .img-card {
+  animation: popOut 0.5s ease 0s 1 normal forwards;
+  border-radius: 5px;
+  padding: 5px;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 50px;
 }
-.open-img .img-card img{
-padding: 2px;
-background-color: white;
-border-radius: 5px;
-width: 100%;
-height: 70vh;
+.open-img .img-card img {
+  padding: 2px;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: 70vh;
+}
+
+/* --------------------------------------------
+Tiny Slider 
+---------------------------------------------- */
+
+.previous-slider {
+  position: absolute;
+  top: 50%;
+  z-index: 90;
+  margin-left: 50px;
+  cursor: pointer;
+  left: 0;
+  font-size: 32px;
+  opacity: 0.7;
+  color: var(--primary);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.previous-slider:hover {
+  opacity: 1;
+  color: var(--secondary);
+}
+
+.next-slider {
+  position: absolute;
+  top: 50%;
+  z-index: 90;
+  cursor: pointer;
+  margin-right: 50px;
+  right: 0;
+  opacity: 0.7;
+  font-size: 32px;
+  color: var(--primary);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.next-slider:hover {
+  opacity: 1;
+  color: var(--secondary);
+}
+
+.up-down-slider {
+  position: absolute;
+  top: 30%;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .up-down-slider {
+    display: none;
+  }
+}
+
+.up-slider {
+  cursor: pointer;
+  font-size: 32px;
+  color: var(--primary);
+  outline: none;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5em;
+}
+
+.up-slider:hover {
+  opacity: 1;
+  color: var(--secondary);
+}
+
+.down-slider {
+  cursor: pointer;
+  font-size: 32px;
+  color: var(--primary);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.down-slider:hover {
+  opacity: 1;
+  color: var(--secondary);
 }
