@@ -20,6 +20,7 @@ const TeamFounder = () => {
           {dataFounder.map((item, i) => {
             return (
               <Col
+                sm="2"
                 key={i}
                 className={
                   i % 2 === 0
