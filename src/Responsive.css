@@ -63,6 +63,17 @@ Navbar Responsive
       /* -----------
     GALLERY
     ------------ */
+    .wrapper-gallery{
+        background-size: 100%;
+      }
+    .wrapper-gallery .img-foto{
+        display: none;
+    }
+    .wrapper-gallery .title{
+        background-position-x: 95%;
+        background-position-y: 50%;
+        background-size: 15%;
+      }
     .tns-slider{
         padding: 0;
       }
@@ -82,6 +93,16 @@ Navbar Responsive
         font-size: 8px;
         line-height: 80%;
     }
+    
+    /* -----------
+    Our Destination
+    ------------ */
+    .our-destinations .tns-ovh{
+        height: 550px !important;
+      }
+    .our-destinations{
+        font-size: 13px;
+    }
       /* -----------
     Contact
     ------------ */
@@ -91,5 +112,10 @@ Navbar Responsive
     /* FOOTER */
     .footer{
         text-align: center;
+    }
+
+    /* Dhow IMG */
+    .open-img .img-card {
+        width: 100% !important;
     }
 }

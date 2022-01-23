@@ -2,27 +2,23 @@ import React, { useState } from 'react'
 import { Col, Container, Row, Button } from 'react-bootstrap';
 import TinySlider from "tiny-slider-react";
 import { DataOurDestination } from './DataOurDestination';
+import img from '../../asset/img/bg-2.png'
 const OurDestination = () => {
     const settings = {
         "container": "#autoplay",
-        "autoplayText": [
-            " asd",
-            "asdasd "
-        ],
         axis: 'vertical',
-        gutter: 5,
-        autoplay: true,
+        // autoplay: true,
         mouseDrag: true,
         loop: true,
         items: 1,
         controls: false,
-        center:true,
+        // center:true,
         swipAngle: true
 
     }
 
     return (
-        <>
+        <div className='wrapper-destination'>
             <div className='destination mb-3'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path fill="#ffffff" fillOpacity="1" d="M0,96L80,90.7C160,85,320,75,480,96C640,117,800,171,960,170.7C1120,171,1280,117,1360,90.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
@@ -37,25 +33,28 @@ const OurDestination = () => {
                     <path fill="#ffff" fillOpacity="1" className='border-0' d="M0,96L80,90.7C160,85,320,75,480,96C640,117,800,171,960,170.7C1120,171,1280,117,1360,90.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
                 </svg>
             </div>
-            <h4 className='text-center'>Explore Our Destination</h4>
-            <small className='text-info d-block text-center'>Swip Up/Down</small>
-            <div className='mb-5 p-5 our-destinations'>
-                    <TinySlider settings={settings}>
-                        {DataOurDestination.map((item, i) => (
-                            <Row key={i} className='shadow-sm my-1 align-items-center'>
-                                <Col sm="4" className='our-destination-img p-3'>
-                                    <img src={item.img} />
-                                </Col>
-                                <Col>
-                                    <h3>{item.title}</h3>
-                                    <p>{item.desc}</p>
-                                </Col>
-                            </Row>
-                        ))}
-                    </TinySlider>
+            <div className='my-3'>
+                <h4 className='text-center'>Explore Our Destination</h4>
+                <small className='text-info d-block text-center'>Swip Up/Down</small>
             </div>
 
-        </>
+            <div className='p-5 our-destinations'>
+                <TinySlider settings={settings}>
+                    {DataOurDestination.map((item, i) => (
+                        <Row key={i} className='shadow-sm my-2 p-2 align-items-center'>
+                            <Col sm="4" className='my-1 our-destination-img p-3 '>
+                                <img src={item.img} />
+                            </Col>
+                            <Col >
+                                <h3>{item.title}</h3>
+                                <p>{item.desc}</p>
+                            </Col>
+                        </Row>
+                    ))}
+                </TinySlider>
+            </div>
+
+        </div>
     )
 }
 
